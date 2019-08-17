@@ -1,0 +1,3 @@
+[submodule "OwlEngine/vendor/spdlog"]
+	path = OwlEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
