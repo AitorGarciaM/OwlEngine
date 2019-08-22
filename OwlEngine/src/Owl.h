@@ -4,6 +4,7 @@
 
 #include "Owl/Application.h"
 #include "Owl/Log.h"
+#include "Owl/Video.h"
 
 // EntryPoint
 #include"Owl\EntryPoint.h"

@@ -20,6 +20,7 @@
       <Filter>Owl</Filter>
     </ClInclude>
     <ClInclude Include="src\oepch.h" />
+    <ClInclude Include="src\Owl\Video.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Owl\Application.cpp">
@@ -29,5 +30,6 @@
       <Filter>Owl</Filter>
     </ClCompile>
     <ClCompile Include="src\oepch.cpp" />
+    <ClCompile Include="src\Owl\Video.cpp" />
   </ItemGroup>
 </Project>
