@@ -1,6 +1,8 @@
 #include <iostream>
 #include <Owl.h>
 
+
+
 class Sandbox : public OE::Application
 {
 public:
@@ -13,8 +15,11 @@ public:
 
 	void run()
 	{
-		std::cout << "Welcome to OwlEngine!" << std::endl;
-		std::cin.get();
+		std::cout << "Welcome to OwlEngine!" << std::endl;	
+		while (!s_Input->getExit())
+		{
+			s_Input->update();
+		}
 	}
 };
 

@@ -21,6 +21,7 @@
     </ClInclude>
     <ClInclude Include="src\oepch.h" />
     <ClInclude Include="src\Owl\Video.h" />
+    <ClInclude Include="src\Owl\Input.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Owl\Application.cpp">
@@ -31,5 +32,6 @@
     </ClCompile>
     <ClCompile Include="src\oepch.cpp" />
     <ClCompile Include="src\Owl\Video.cpp" />
+    <ClCompile Include="src\Owl\Input.cpp" />
   </ItemGroup>
 </Project>

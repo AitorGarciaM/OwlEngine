@@ -3,7 +3,8 @@
 #ifdef OE_PLATFORM_WINDOWS
 
 	extern OE::Application* OE::createApplication();
-	extern OE::Video* s_Video = OE::Video::getInstance();
+	OE::Video* s_Video = OE::Video::getInstance();
+	OE::Input* s_Input = OE::Input::getInstance();
 
 	int main(int argc, char* argv[])
 	{
