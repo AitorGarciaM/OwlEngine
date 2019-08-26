@@ -1,5 +1,6 @@
 #pragma once
 #include <SDL.h>
+#include <glew.h>
 #include "Core.h"
 
 namespace OE {
@@ -10,7 +11,7 @@ namespace OE {
 		static Video* instance;
 
 		SDL_Window* window;
-		SDL_Renderer* renderer;
+		SDL_GLContext context;
 
 		Video();
 	public:
