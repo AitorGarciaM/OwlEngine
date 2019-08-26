@@ -1,6 +1,5 @@
 #pragma once
-#include <SDL.h>
-#include <glew.h>
+
 #include "Core.h"
 
 namespace OE {
@@ -17,6 +16,8 @@ namespace OE {
 	public:
 		static Video* getInstance();
 		void init();
+
+		
 		~Video();
 	};
 

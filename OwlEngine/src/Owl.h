@@ -1,5 +1,9 @@
 #pragma once
 
+#include <SDL.h>
+#include <glew.h>
+#include <SDL_opengl.h>
+
 // For use by Owl Applications.
 
 #include "Owl/Application.h"

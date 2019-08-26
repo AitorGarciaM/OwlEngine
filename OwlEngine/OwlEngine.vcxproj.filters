@@ -22,6 +22,7 @@
     <ClInclude Include="src\oepch.h" />
     <ClInclude Include="src\Owl\Video.h" />
     <ClInclude Include="src\Owl\Input.h" />
+    <ClInclude Include="src\Owl\Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Owl\Application.cpp">
@@ -33,5 +34,6 @@
     <ClCompile Include="src\oepch.cpp" />
     <ClCompile Include="src\Owl\Video.cpp" />
     <ClCompile Include="src\Owl\Input.cpp" />
+    <ClCompile Include="src\Owl\Shader.cpp" />
   </ItemGroup>
 </Project>

@@ -15,7 +15,15 @@ public:
 
 	void run()
 	{
-		std::cout << "Welcome to OwlEngine!" << std::endl;	
+
+		OE::Log::init();
+		s_Video->init();
+
+		int a = 4;
+
+		OE_CORE_WARN("Initialized Log!");
+		OE_INFO("Hello Var={0}", a);
+
 		while (!s_Input->getExit())
 		{
 			s_Input->update();

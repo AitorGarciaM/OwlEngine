@@ -351,6 +351,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Owl\Shader.h" />
     <ClInclude Include="src\Owl\Input.h" />
     <ClInclude Include="src\oepch.h" />
     <ClInclude Include="src\Owl.h" />
@@ -361,6 +362,7 @@
     <ClInclude Include="src\Owl\Video.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Owl\Shader.cpp" />
     <ClCompile Include="src\Owl\Input.cpp" />
     <ClCompile Include="src\oepch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug32|Win32'">Create</PrecompiledHeader>
