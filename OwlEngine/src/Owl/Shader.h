@@ -8,15 +8,17 @@ namespace OE {
 	{
 	private:
 		GLuint idProgram;
-		bool allOk;
+		bool _allOk;
 	public:
 		Shader();
 		~Shader();
 
 		void init(const GLchar* filename);
 		GLuint getProgramId() { return idProgram; };
-		void use() { if (allOk) glUseProgram(idProgram); }
-		void deleteProgram() { if (allOk) glDeleteProgram(idProgram); }
+		void use() { if (_allOk) glUseProgram(idProgram); }
+		void deleteProgram() { if (_allOk) glDeleteProgram(idProgram); }
+
+		void stopShader() { if (_allOk) { glUseProgram(0); } }
 
 	};
 

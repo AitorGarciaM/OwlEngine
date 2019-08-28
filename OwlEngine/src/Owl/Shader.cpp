@@ -5,6 +5,7 @@ namespace OE {
 
 	Shader::Shader()
 	{
+		_allOk = false;
 	}
 
 
@@ -14,8 +15,9 @@ namespace OE {
 
 	void Shader::init(const GLchar * filename)
 	{
-		allOk = false;
-		std::string path = filename;
+		//allOk = false;
+		std::string path = "./Resources/";
+		path += filename;
 		std::string vertexShaderPath = path + ".sv";
 		std::string fragmentShaderPath = path + ".sf";
 
@@ -34,7 +36,7 @@ namespace OE {
 			{
 				std::getline(sv, tempString);
 
-				vShaderSource = tempString + "\n";
+				vShaderSource += tempString + "\n";
 			}
 		}
 
@@ -49,7 +51,7 @@ namespace OE {
 			{
 				std::getline(sf, tempString);
 
-				fShaderSource = tempString + "\n";
+				fShaderSource += tempString + "\n";
 			}
 		}
 		
@@ -90,7 +92,7 @@ namespace OE {
 		// Create shader program.
 		if (success)
 		{
-			allOk = true;
+			_allOk = true;
 
 			idProgram = glCreateProgram();
 			glAttachShader(idProgram, vertexShader);

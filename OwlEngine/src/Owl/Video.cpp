@@ -44,6 +44,25 @@ namespace OE {
 		}
 
 		SDL_GL_SetSwapInterval(1);
+
+		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+	}
+
+	void Video::draw(unsigned int _VAO, Shader* _shader)
+	{
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		_shader->use();
+
+		glBindVertexArray(_VAO);
+		glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
+
+		glBindVertexArray(0);
+
+		_shader->stopShader();
+
+		SDL_GL_SwapWindow(window);
+
 	}
 
 

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "Shader.h"
 
 namespace OE {
 
@@ -16,6 +17,8 @@ namespace OE {
 	public:
 		static Video* getInstance();
 		void init();
+
+		void draw(unsigned int _VAO, Shader* _shader);
 
 		
 		~Video();
