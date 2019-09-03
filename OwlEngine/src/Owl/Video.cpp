@@ -48,14 +48,14 @@ namespace OE {
 		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 	}
 
-	void Video::draw(unsigned int _VAO, Shader* _shader)
+	void Video::draw(unsigned int _VAO, unsigned int _indexSize ,Shader* _shader)
 	{
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		_shader->use();
 
 		glBindVertexArray(_VAO);
-		glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, _indexSize, GL_UNSIGNED_INT, 0);
 
 		glBindVertexArray(0);
 

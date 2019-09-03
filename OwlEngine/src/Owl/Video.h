@@ -18,7 +18,7 @@ namespace OE {
 		static Video* getInstance();
 		void init();
 
-		void draw(unsigned int _VAO, Shader* _shader);
+		void draw(unsigned int _VAO, unsigned int _indexSize ,Shader* _shader);
 
 		
 		~Video();
