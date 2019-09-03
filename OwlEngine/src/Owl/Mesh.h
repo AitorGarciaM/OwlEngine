@@ -1,9 +1,6 @@
 #pragma once
 #include"Core.h"
 
-#define vector2 glm::vec2
-#define vector3 glm::vec3
-
 struct Vertex
 {
 	vector3 positions, normals;

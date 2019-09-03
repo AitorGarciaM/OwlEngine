@@ -10,3 +10,6 @@
 	#error OwlEngine only suports Windows!
 #endif // HZ_PLATFORM_WINDOWS
 
+#define mat4 glm::mat4
+#define vector2 glm::vec2
+#define vector3 glm::vec3

@@ -24,6 +24,7 @@
     <ClInclude Include="src\Owl\Input.h" />
     <ClInclude Include="src\Owl\Shader.h" />
     <ClInclude Include="src\Owl\Mesh.h" />
+    <ClInclude Include="src\Owl\Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Owl\Application.cpp">
@@ -37,5 +38,6 @@
     <ClCompile Include="src\Owl\Input.cpp" />
     <ClCompile Include="src\Owl\Shader.cpp" />
     <ClCompile Include="src\Owl\Mesh.cpp" />
+    <ClCompile Include="src\Owl\Transform.cpp" />
   </ItemGroup>
 </Project>
