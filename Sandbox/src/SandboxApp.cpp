@@ -16,7 +16,7 @@ public:
 		s_Video->init();
 
 		mesh = new OE::Mesh();
-		mesh->loadMesh("Quad.obj");
+		mesh->createQuad();
 
 		shader = new OE::Shader();
 		shader->init("Shader");
