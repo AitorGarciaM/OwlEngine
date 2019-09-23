@@ -13,3 +13,7 @@
 #define mat4 glm::mat4
 #define vector2 glm::vec2
 #define vector3 glm::vec3
+
+const glm::vec3 up = { 0.0f,1.0f,0.0f };
+
+#define vector3UP up

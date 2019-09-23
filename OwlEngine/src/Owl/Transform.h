@@ -13,9 +13,10 @@ namespace OE {
 		Transform();
 		~Transform();
 
-		vector3* getPosition()		{ return &position; }
-		vector3* getRotation()		{ return &rotation; }
-		vector3* getScale()			{ return &scale;    }
+		vector3 getPosition()		{ return position; }
+		vector3 getRotation()		{ return rotation; }
+		vector3 getScale()			{ return scale;    }
+		mat4 getTransform()			{ return transform; }
 
 		void setPosition(vector3 _position);
 		void setRotation(vector3 _rotation);

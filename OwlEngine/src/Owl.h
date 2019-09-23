@@ -12,6 +12,7 @@
 #include "Owl/Video.h"
 #include "Owl/Input.h"
 #include "Owl/Mesh.h"
+#include "Owl/Transform.h"
 
 // EntryPoint
 #include"Owl\EntryPoint.h"
