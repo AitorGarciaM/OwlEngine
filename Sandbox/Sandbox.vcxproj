@@ -50,8 +50,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\bin\Debug32-windows-x86\Sandbox\</OutDir>
-    <IntDir>C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\bin-int\Debug32-windows-x86\Sandbox\</IntDir>
+    <OutDir>$(SolutionDir)bin\Debug32-windows-x86\Sandbox\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\Debug32-windows-x86\Sandbox\</IntDir>
     <TargetName>Sandbox</TargetName>
     <TargetExt>.exe</TargetExt>
     <IncludePath>C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\glm;$(IncludePath)</IncludePath>
@@ -68,7 +68,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>OE_PLATFORM_WINDOWS;OE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\src;C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\SDL2\include;C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\spdlog\include;C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\glew\include;C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\glm</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OwlEngine\src;$(SolutionDir)OwlEngine\vendor\SDL2\include;$(SolutionDir)OwlEngine\vendor\spdlog\include;$(SolutionDir)OwlEngine\vendor\glew\include;$(SolutionDir)OwlEngine\vendor\glm</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>

@@ -80,7 +80,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Debug32-windows-x86\OwlEngine\OwlEngine.lib</ImportLibrary>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;opengl32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\glew\lib\Win32;C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\SDL2\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)OwlEngine\vendor\glew\lib\Win32;$(SolutionDir)OwlEngine\vendor\SDL2\lib\x86</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy ..\bin\Debug32-windows-x86\OwlEngine\OwlEngine.dll ..\bin\Debug32-windows-x86\Sandbox</Command>
