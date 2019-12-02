@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OwlEngine: Fichero Fuente Sandbox/src/SandboxApp.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OwlEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d6566dce0e80bbc07bd0910f23e42586.html">Sandbox</a></li><li class="navelem"><a class="el" href="dir_de23c1fbcc3e5590d6f77f071e4e3d00.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SandboxApp.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Owl.h&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Camera.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_sandbox.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sandbox.html">Sandbox</a> : <span class="keyword">public</span> <a class="code" href="class_o_e_1_1_application.html">OE::Application</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_o_e_1_1_mesh.html">OE::Mesh</a>* mesh;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_o_e_1_1_shader.html">OE::Shader</a>* shader;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_camera.html">Camera</a>* mainCamera;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_o_e_1_1_transform.html">OE::Transform</a> obj;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_sandbox.html">Sandbox</a>() </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_o_e_1_1_log.html#a118d91c1abad45ad1fb3369351bb38bf">OE::Log::init</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        OE_CORE_INFO(<span class="stringliteral">&quot;El motor se esta iniciando!&quot;</span>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        s_Video-&gt;init();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        mesh = <span class="keyword">new</span> <a class="code" href="class_o_e_1_1_mesh.html">OE::Mesh</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        mesh-&gt;<a class="code" href="class_o_e_1_1_mesh.html#a3c56643343717c4cf9151a5b9ce93a10">createQuad</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        shader = <span class="keyword">new</span> <a class="code" href="class_o_e_1_1_shader.html">OE::Shader</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        shader-&gt;<a class="code" href="class_o_e_1_1_shader.html#a18c8d2bb696cb056d6488e0667db4836">init</a>(<span class="stringliteral">&quot;Shader&quot;</span>);     </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        mainCamera = <span class="keyword">new</span> <a class="code" href="class_camera.html">Camera</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        mainCamera-&gt;<a class="code" href="class_camera.html#ace070c08fb1944fa047accff5f224033">init</a>(Ortho);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        mainCamera-&gt;<a class="code" href="class_camera.html#ab183465a765b043369167e052566e6e4">getTransform</a>()-&gt;<a class="code" href="class_o_e_1_1_transform.html#ace06ef8e25b7a604ee76cb79aced3cac">setPosition</a>({ 0.0f, 0.0f, 3.0f });</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        obj.<a class="code" href="class_o_e_1_1_transform.html#ace06ef8e25b7a604ee76cb79aced3cac">setPosition</a>({ 400.0f, 300.0f, -4.0f });</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        obj.<a class="code" href="class_o_e_1_1_transform.html#a1a9e5939e7a23d1f2ff09ef0f52b2073">setScale</a>({ 100.0f, 100.0f, 0.0f });</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ~<a class="code" href="class_sandbox.html">Sandbox</a>()</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">delete</span> mesh;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">delete</span> mainCamera;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">delete</span> shader;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_sandbox.html#a681a908b15155a24d6c586e32bf6f21a">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sandbox.html#a681a908b15155a24d6c586e32bf6f21a">run</a>()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {       </div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">while</span> (!s_Input-&gt;getExit())</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            s_Input-&gt;update();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            s_Video-&gt;draw(mesh-&gt;<a class="code" href="class_o_e_1_1_mesh.html#acf683355e41be5f491c3223136044189">getVAO</a>(), mesh-&gt;<a class="code" href="class_o_e_1_1_mesh.html#ac46257a88ef069aefcb452cab401cac6">getVertexsIndex</a>()-&gt;size(), shader, obj.<a class="code" href="class_o_e_1_1_transform.html#a8eb2f9aa35107d5dfb36a6614b5d457d">getTransform</a>(), mainCamera-&gt;<a class="code" href="class_camera.html#a2a06a4a6e9e917a87ecd2d44b1c0f4fb">getView</a>(), mainCamera-&gt;<a class="code" href="class_camera.html#acbc91dfa7ab3219790e83bf01e06e8aa">getProjection</a>());</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="class_o_e_1_1_application.html">OE::Application</a>* OE::createApplication()</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_sandbox.html">Sandbox</a>();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div><div class="ttc" id="class_camera_html_a2a06a4a6e9e917a87ecd2d44b1c0f4fb"><div class="ttname"><a href="class_camera.html#a2a06a4a6e9e917a87ecd2d44b1c0f4fb">Camera::getView</a></div><div class="ttdeci">mat4 getView()</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00044">Camera.h:44</a></div></div>
+<div class="ttc" id="class_o_e_1_1_shader_html_a18c8d2bb696cb056d6488e0667db4836"><div class="ttname"><a href="class_o_e_1_1_shader.html#a18c8d2bb696cb056d6488e0667db4836">OE::Shader::init</a></div><div class="ttdeci">void init(const GLchar *filename)</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8cpp_source.html#l00016">Shader.cpp:16</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_a3c56643343717c4cf9151a5b9ce93a10"><div class="ttname"><a href="class_o_e_1_1_mesh.html#a3c56643343717c4cf9151a5b9ce93a10">OE::Mesh::createQuad</a></div><div class="ttdeci">void createQuad()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8cpp_source.html#l00221">Mesh.cpp:221</a></div></div>
+<div class="ttc" id="class_camera_html_ab183465a765b043369167e052566e6e4"><div class="ttname"><a href="class_camera.html#ab183465a765b043369167e052566e6e4">Camera::getTransform</a></div><div class="ttdeci">OE::Transform * getTransform()</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00049">Camera.h:49</a></div></div>
+<div class="ttc" id="class_camera_html_ace070c08fb1944fa047accff5f224033"><div class="ttname"><a href="class_camera.html#ace070c08fb1944fa047accff5f224033">Camera::init</a></div><div class="ttdeci">void init(Projection _proj)</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cpp_source.html#l00016">Camera.cpp:16</a></div></div>
+<div class="ttc" id="class_o_e_1_1_transform_html_ace06ef8e25b7a604ee76cb79aced3cac"><div class="ttname"><a href="class_o_e_1_1_transform.html#ace06ef8e25b7a604ee76cb79aced3cac">OE::Transform::setPosition</a></div><div class="ttdeci">void setPosition(vector3 _position)</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00016">Transform.cpp:16</a></div></div>
+<div class="ttc" id="class_sandbox_html"><div class="ttname"><a href="class_sandbox.html">Sandbox</a></div><div class="ttdoc">Applicacion de prueba para probar las funcionalidades del motor.</div><div class="ttdef"><b>Definition:</b> <a href="_sandbox_app_8cpp_source.html#l00009">SandboxApp.cpp:9</a></div></div>
+<div class="ttc" id="class_o_e_1_1_transform_html_a8eb2f9aa35107d5dfb36a6614b5d457d"><div class="ttname"><a href="class_o_e_1_1_transform.html#a8eb2f9aa35107d5dfb36a6614b5d457d">OE::Transform::getTransform</a></div><div class="ttdeci">mat4 getTransform()</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00034">Transform.h:34</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_acf683355e41be5f491c3223136044189"><div class="ttname"><a href="class_o_e_1_1_mesh.html#acf683355e41be5f491c3223136044189">OE::Mesh::getVAO</a></div><div class="ttdeci">unsigned int getVAO()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00066">Mesh.h:66</a></div></div>
+<div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">Dibuja en pantalla lo que enfoca.</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00015">Camera.h:15</a></div></div>
+<div class="ttc" id="class_o_e_1_1_transform_html_a1a9e5939e7a23d1f2ff09ef0f52b2073"><div class="ttname"><a href="class_o_e_1_1_transform.html#a1a9e5939e7a23d1f2ff09ef0f52b2073">OE::Transform::setScale</a></div><div class="ttdeci">void setScale(vector3 _scale)</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8cpp_source.html#l00032">Transform.cpp:32</a></div></div>
+<div class="ttc" id="class_o_e_1_1_transform_html"><div class="ttname"><a href="class_o_e_1_1_transform.html">OE::Transform</a></div><div class="ttdoc">Nos permite cambiar la posicion, rotacion y escalado de una maya.</div><div class="ttdef"><b>Definition:</b> <a href="_transform_8h_source.html#l00010">Transform.h:10</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_ac46257a88ef069aefcb452cab401cac6"><div class="ttname"><a href="class_o_e_1_1_mesh.html#ac46257a88ef069aefcb452cab401cac6">OE::Mesh::getVertexsIndex</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; * getVertexsIndex()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00050">Mesh.h:50</a></div></div>
+<div class="ttc" id="class_o_e_1_1_log_html_a118d91c1abad45ad1fb3369351bb38bf"><div class="ttname"><a href="class_o_e_1_1_log.html#a118d91c1abad45ad1fb3369351bb38bf">OE::Log::init</a></div><div class="ttdeci">static void init()</div><div class="ttdef"><b>Definition:</b> <a href="_log_8cpp_source.html#l00011">Log.cpp:11</a></div></div>
+<div class="ttc" id="class_o_e_1_1_application_html"><div class="ttname"><a href="class_o_e_1_1_application.html">OE::Application</a></div><div class="ttdoc">Es una clase virtual que permite ejecutar desde el entry point cualquier applicación que herede de esta.</div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00010">Application.h:10</a></div></div>
+<div class="ttc" id="class_sandbox_html_a681a908b15155a24d6c586e32bf6f21a"><div class="ttname"><a href="class_sandbox.html#a681a908b15155a24d6c586e32bf6f21a">Sandbox::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="_sandbox_app_8cpp_source.html#l00055">SandboxApp.cpp:55</a></div></div>
+<div class="ttc" id="class_o_e_1_1_shader_html"><div class="ttname"><a href="class_o_e_1_1_shader.html">OE::Shader</a></div><div class="ttdoc">Compila los shader en grafica.</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00010">Shader.h:10</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html"><div class="ttname"><a href="class_o_e_1_1_mesh.html">OE::Mesh</a></div><div class="ttdoc">Genera mayas a partir de un archivo obj o crea Quads.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00023">Mesh.h:23</a></div></div>
+<div class="ttc" id="class_camera_html_acbc91dfa7ab3219790e83bf01e06e8aa"><div class="ttname"><a href="class_camera.html#acbc91dfa7ab3219790e83bf01e06e8aa">Camera::getProjection</a></div><div class="ttdeci">mat4 getProjection()</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00040">Camera.h:40</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

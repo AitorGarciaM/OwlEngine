@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OwlEngine: Fichero Fuente OwlEngine/src/Owl/Input.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OwlEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_709356536221903f0474d929e8001d90.html">OwlEngine</a></li><li class="navelem"><a class="el" href="dir_0bc7c710d32d0734e81a94a069322c6c.html">src</a></li><li class="navelem"><a class="el" href="dir_be15a2aaabb45817d6cdd4d0965c044d.html">Owl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Input.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;Core.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;SDL.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>OE {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">enum</span> Key</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        Shift, LControl, RControl,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        UpArrow, LeftArrow, RightArrow, DownArrow,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        LastKey</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define LASTKEY         Key::LastKey</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_o_e_1_1_input.html">   21</a></span>&#160;    <span class="keyword">class </span>OWL_API <a class="code" href="class_o_e_1_1_input.html">Input</a></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_o_e_1_1_input.html">Input</a>* instance;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        SDL_Event e;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">bool</span> keys[LASTKEY];</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">bool</span> keysDown[LASTKEY];</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">bool</span> keysUp[LASTKEY];</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">bool</span> out;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_o_e_1_1_input.html">Input</a>();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_o_e_1_1_input.html">Input</a>* getInstance();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> update();</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_o_e_1_1_input.html#a7505297902349c2083e2ad3350965b57">   48</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_o_e_1_1_input.html#a7505297902349c2083e2ad3350965b57">getKey</a>(Key _value) { <span class="keywordflow">return</span> keys[_value]; }</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_o_e_1_1_input.html#a1b43e614b1bebda4204731c415a4e63f">   52</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_o_e_1_1_input.html#a1b43e614b1bebda4204731c415a4e63f">getKeyDown</a>(Key _value) { <span class="keywordflow">return</span> keysDown[_value]; }</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_o_e_1_1_input.html#a1e91daa90de988db17f50847a05a6525">   56</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_o_e_1_1_input.html#a1e91daa90de988db17f50847a05a6525">getKeyUp</a>(Key _value) { <span class="keywordflow">return</span> keysUp[_value]; }</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_o_e_1_1_input.html#a6d74dd37bf1067b492d5407e85ec3389">   60</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_o_e_1_1_input.html#a6d74dd37bf1067b492d5407e85ec3389">getExit</a>() { <span class="keywordflow">return</span> out; }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ~<a class="code" href="class_o_e_1_1_input.html">Input</a>();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="ttc" id="class_o_e_1_1_input_html_a6d74dd37bf1067b492d5407e85ec3389"><div class="ttname"><a href="class_o_e_1_1_input.html#a6d74dd37bf1067b492d5407e85ec3389">OE::Input::getExit</a></div><div class="ttdeci">bool getExit()</div><div class="ttdef"><b>Definition:</b> <a href="_input_8h_source.html#l00060">Input.h:60</a></div></div>
+<div class="ttc" id="class_o_e_1_1_input_html_a1e91daa90de988db17f50847a05a6525"><div class="ttname"><a href="class_o_e_1_1_input.html#a1e91daa90de988db17f50847a05a6525">OE::Input::getKeyUp</a></div><div class="ttdeci">bool getKeyUp(Key _value)</div><div class="ttdef"><b>Definition:</b> <a href="_input_8h_source.html#l00056">Input.h:56</a></div></div>
+<div class="ttc" id="class_o_e_1_1_input_html_a1b43e614b1bebda4204731c415a4e63f"><div class="ttname"><a href="class_o_e_1_1_input.html#a1b43e614b1bebda4204731c415a4e63f">OE::Input::getKeyDown</a></div><div class="ttdeci">bool getKeyDown(Key _value)</div><div class="ttdef"><b>Definition:</b> <a href="_input_8h_source.html#l00052">Input.h:52</a></div></div>
+<div class="ttc" id="class_o_e_1_1_input_html"><div class="ttname"><a href="class_o_e_1_1_input.html">OE::Input</a></div><div class="ttdoc">detecta entradas de teclado y raton.</div><div class="ttdef"><b>Definition:</b> <a href="_input_8h_source.html#l00021">Input.h:21</a></div></div>
+<div class="ttc" id="class_o_e_1_1_input_html_a7505297902349c2083e2ad3350965b57"><div class="ttname"><a href="class_o_e_1_1_input.html#a7505297902349c2083e2ad3350965b57">OE::Input::getKey</a></div><div class="ttdeci">bool getKey(Key _value)</div><div class="ttdef"><b>Definition:</b> <a href="_input_8h_source.html#l00048">Input.h:48</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

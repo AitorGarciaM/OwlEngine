@@ -8,6 +8,10 @@ enum Projection
 	Perpective
 };
 
+/**
+*@class Camera
+*@brief Dibuja en pantalla lo que enfoca.
+*/
 class OWL_API Camera
 {
 	OE::Transform* transform;
@@ -20,10 +24,27 @@ public:
 	Camera();
 	~Camera();
 
+	/**
+	* Inicializa la camara.
+	*/
 	void init(Projection _proj);
+
+	/**
+	* Actualiza la camara cada vuelta de proceso.
+	*/
 	void update();
 
+	/**
+	*@return Nos devuelve la matriz de proyección de la camara.
+	*/
 	mat4 getProjection() { return projection; }
+	/**
+	* @return nos devuelve la matriz de la vista de la camara.
+	*/
 	mat4 getView() { return view; }
+
+	/**
+	* @return Nos devuelve la matríz de posición, rotación y escalado de la camara. 
+	*/
 	OE::Transform* getTransform() { return transform; }
 };

@@ -6,6 +6,10 @@
 #include "spdlog/spdlog.h"
 
 namespace OE {
+	/**
+	* @class Log
+	* @brief Nos permite escribir por consola errores, advertencia o logs
+	*/
 
 	class OWL_API Log
 	{
@@ -13,9 +17,18 @@ namespace OE {
 		static std::shared_ptr<spdlog::logger> sCoreLogger;
 		static std::shared_ptr<spdlog::logger> sClientLogger;
 	public:
+		/**
+		* inizializa la clase.
+		*/
 		static void init();
 
+		/**
+		* Nos devuelve la instancia del CoreLogger.
+		*/
 		inline static std::shared_ptr<spdlog::logger>& getCoreLogger() { return sCoreLogger; }
+		/**
+		* Nos devuelbe la instancia del ClientLogger.
+		*/
 		inline static std::shared_ptr<spdlog::logger>& getClientLogger() { return sClientLogger; }
 	};
 

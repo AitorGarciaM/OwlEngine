@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OwlEngine: Fichero Fuente OwlEngine/src/Owl/Mesh.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OwlEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_709356536221903f0474d929e8001d90.html">OwlEngine</a></li><li class="navelem"><a class="el" href="dir_0bc7c710d32d0734e81a94a069322c6c.html">src</a></li><li class="navelem"><a class="el" href="dir_be15a2aaabb45817d6cdd4d0965c044d.html">Owl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Mesh.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include&quot;Core.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_vertex.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_vertex.html">Vertex</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_vertex.html#a20b6ec1193757bb06818dc804d3022a5">   12</a></span>&#160;    vector3 <a class="code" href="struct_vertex.html#a20b6ec1193757bb06818dc804d3022a5">positions</a>; </div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_vertex.html#acc7432f1555cb9cc143f21de3fd1d047">   13</a></span>&#160;    vector3 <a class="code" href="struct_vertex.html#acc7432f1555cb9cc143f21de3fd1d047">normals</a>; </div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_vertex.html#a950461a2f1130e35e5241d4e0c452a47">   14</a></span>&#160;    vector2 <a class="code" href="struct_vertex.html#a950461a2f1130e35e5241d4e0c452a47">uvs</a>; </div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>OE {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_o_e_1_1_mesh.html">   23</a></span>&#160;    <span class="keyword">class </span>OWL_API <a class="code" href="class_o_e_1_1_mesh.html">Mesh</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::vector&lt;unsigned int&gt; vertexIndex, uvIndex, normalIndex;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::vector&lt;Vertex&gt; vertexs;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VAO, VBO, EBO;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> createMesh();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> loadMesh(std::string _filename);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> createQuad();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_o_e_1_1_mesh.html#ac46257a88ef069aefcb452cab401cac6">   50</a></span>&#160;        std::vector&lt;unsigned int&gt;* <a class="code" href="class_o_e_1_1_mesh.html#ac46257a88ef069aefcb452cab401cac6">getVertexsIndex</a>() { <span class="keywordflow">return</span> &amp;vertexIndex; }</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_o_e_1_1_mesh.html#adc2f3d9bbe6a858add2aa0f356509938">   54</a></span>&#160;        std::vector&lt;unsigned int&gt;* <a class="code" href="class_o_e_1_1_mesh.html#adc2f3d9bbe6a858add2aa0f356509938">getUvsIndex</a>() { <span class="keywordflow">return</span> &amp;uvIndex; }</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_o_e_1_1_mesh.html#aa8b3afbd0c6639fe7a11e93cb0282610">   58</a></span>&#160;        std::vector&lt;unsigned int&gt;* <a class="code" href="class_o_e_1_1_mesh.html#aa8b3afbd0c6639fe7a11e93cb0282610">getNormalsIndex</a>() { <span class="keywordflow">return</span> &amp;normalIndex; }</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_o_e_1_1_mesh.html#a6700e38e0dbe33377675918112df2642">   62</a></span>&#160;        std::vector&lt;Vertex&gt;* <a class="code" href="class_o_e_1_1_mesh.html#a6700e38e0dbe33377675918112df2642">getVertexs</a>() { <span class="keywordflow">return</span> &amp;vertexs; }</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_o_e_1_1_mesh.html#acf683355e41be5f491c3223136044189">   66</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_o_e_1_1_mesh.html#acf683355e41be5f491c3223136044189">getVAO</a>() { <span class="keywordflow">return</span> VAO; }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_o_e_1_1_mesh.html">Mesh</a>();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        ~<a class="code" href="class_o_e_1_1_mesh.html">Mesh</a>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="class_o_e_1_1_mesh_html_a6700e38e0dbe33377675918112df2642"><div class="ttname"><a href="class_o_e_1_1_mesh.html#a6700e38e0dbe33377675918112df2642">OE::Mesh::getVertexs</a></div><div class="ttdeci">std::vector&lt; Vertex &gt; * getVertexs()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00062">Mesh.h:62</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_acf683355e41be5f491c3223136044189"><div class="ttname"><a href="class_o_e_1_1_mesh.html#acf683355e41be5f491c3223136044189">OE::Mesh::getVAO</a></div><div class="ttdeci">unsigned int getVAO()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00066">Mesh.h:66</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_adc2f3d9bbe6a858add2aa0f356509938"><div class="ttname"><a href="class_o_e_1_1_mesh.html#adc2f3d9bbe6a858add2aa0f356509938">OE::Mesh::getUvsIndex</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; * getUvsIndex()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00054">Mesh.h:54</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_ac46257a88ef069aefcb452cab401cac6"><div class="ttname"><a href="class_o_e_1_1_mesh.html#ac46257a88ef069aefcb452cab401cac6">OE::Mesh::getVertexsIndex</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; * getVertexsIndex()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00050">Mesh.h:50</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html_aa8b3afbd0c6639fe7a11e93cb0282610"><div class="ttname"><a href="class_o_e_1_1_mesh.html#aa8b3afbd0c6639fe7a11e93cb0282610">OE::Mesh::getNormalsIndex</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; * getNormalsIndex()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00058">Mesh.h:58</a></div></div>
+<div class="ttc" id="struct_vertex_html_a20b6ec1193757bb06818dc804d3022a5"><div class="ttname"><a href="struct_vertex.html#a20b6ec1193757bb06818dc804d3022a5">Vertex::positions</a></div><div class="ttdeci">vector3 positions</div><div class="ttdoc">posición del vertice.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00012">Mesh.h:12</a></div></div>
+<div class="ttc" id="struct_vertex_html_a950461a2f1130e35e5241d4e0c452a47"><div class="ttname"><a href="struct_vertex.html#a950461a2f1130e35e5241d4e0c452a47">Vertex::uvs</a></div><div class="ttdeci">vector2 uvs</div><div class="ttdoc">cordenadas de textura del vertice.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00014">Mesh.h:14</a></div></div>
+<div class="ttc" id="struct_vertex_html"><div class="ttname"><a href="struct_vertex.html">Vertex</a></div><div class="ttdoc">Almacena la información de un vertice.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00009">Mesh.h:9</a></div></div>
+<div class="ttc" id="struct_vertex_html_acc7432f1555cb9cc143f21de3fd1d047"><div class="ttname"><a href="struct_vertex.html#acc7432f1555cb9cc143f21de3fd1d047">Vertex::normals</a></div><div class="ttdeci">vector3 normals</div><div class="ttdoc">cordenadas de las normales del vertice.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00013">Mesh.h:13</a></div></div>
+<div class="ttc" id="class_o_e_1_1_mesh_html"><div class="ttname"><a href="class_o_e_1_1_mesh.html">OE::Mesh</a></div><div class="ttdoc">Genera mayas a partir de un archivo obj o crea Quads.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00023">Mesh.h:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

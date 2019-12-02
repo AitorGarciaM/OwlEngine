@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OwlEngine: Fichero Fuente OwlEngine/src/Owl/Log.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OwlEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_709356536221903f0474d929e8001d90.html">OwlEngine</a></li><li class="navelem"><a class="el" href="dir_0bc7c710d32d0734e81a94a069322c6c.html">src</a></li><li class="navelem"><a class="el" href="dir_be15a2aaabb45817d6cdd4d0965c044d.html">Owl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Log.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Core.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;spdlog/spdlog.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>OE {</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_o_e_1_1_log.html">   14</a></span>&#160;    <span class="keyword">class </span>OWL_API <a class="code" href="class_o_e_1_1_log.html">Log</a></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;spdlog::logger&gt; sCoreLogger;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;spdlog::logger&gt; sClientLogger;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> init();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_o_e_1_1_log.html#a80f8899a0e11e882d81cf83cf6074fd8">   28</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">static</span> std::shared_ptr&lt;spdlog::logger&gt;&amp; <a class="code" href="class_o_e_1_1_log.html#a80f8899a0e11e882d81cf83cf6074fd8">getCoreLogger</a>() { <span class="keywordflow">return</span> sCoreLogger; }</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_o_e_1_1_log.html#a5ef7684fc31a621f48b2826b4f9c4231">   32</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">static</span> std::shared_ptr&lt;spdlog::logger&gt;&amp; <a class="code" href="class_o_e_1_1_log.html#a5ef7684fc31a621f48b2826b4f9c4231">getClientLogger</a>() { <span class="keywordflow">return</span> sClientLogger; }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// Core Log macros.</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define OE_CORE_FATAL(...)      ::OE::Log::getCoreLogger()-&gt;fatal(__VA_ARGS__)</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define OE_CORE_ERROR(...)      ::OE::Log::getCoreLogger()-&gt;error(__VA_ARGS__)</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define OE_CORE_WARN(...)       ::OE::Log::getCoreLogger()-&gt;warn(__VA_ARGS__)</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define OE_CORE_INFO(...)       ::OE::Log::getCoreLogger()-&gt;info(__VA_ARGS__)</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define OE_CORE_TRACE(...)      ::OE::Log::getCoreLogger()-&gt;trace(__VA_ARGS__)</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Client Log macros.</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define OE_FATAL(...)   ::OE::Log::getCoreLogger()-&gt;fatal(__VA_ARGS__)</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define OE_ERROR(...)   ::OE::Log::getCoreLogger()-&gt;error(__VA_ARGS__)</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define OE_WARN(...)    ::OE::Log::getCoreLogger()-&gt;warn(__VA_ARGS__)</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define OE_INFO(...)    ::OE::Log::getCoreLogger()-&gt;info(__VA_ARGS__)</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define OE_TRACE(...)   ::OE::Log::getCoreLogger()-&gt;trace(__VA_ARGS__)</span></div><div class="ttc" id="class_o_e_1_1_log_html_a80f8899a0e11e882d81cf83cf6074fd8"><div class="ttname"><a href="class_o_e_1_1_log.html#a80f8899a0e11e882d81cf83cf6074fd8">OE::Log::getCoreLogger</a></div><div class="ttdeci">static std::shared_ptr&lt; spdlog::logger &gt; &amp; getCoreLogger()</div><div class="ttdef"><b>Definition:</b> <a href="_log_8h_source.html#l00028">Log.h:28</a></div></div>
+<div class="ttc" id="class_o_e_1_1_log_html"><div class="ttname"><a href="class_o_e_1_1_log.html">OE::Log</a></div><div class="ttdoc">Nos permite escribir por consola errores, advertencia o logs.</div><div class="ttdef"><b>Definition:</b> <a href="_log_8h_source.html#l00014">Log.h:14</a></div></div>
+<div class="ttc" id="class_o_e_1_1_log_html_a5ef7684fc31a621f48b2826b4f9c4231"><div class="ttname"><a href="class_o_e_1_1_log.html#a5ef7684fc31a621f48b2826b4f9c4231">OE::Log::getClientLogger</a></div><div class="ttdeci">static std::shared_ptr&lt; spdlog::logger &gt; &amp; getClientLogger()</div><div class="ttdef"><b>Definition:</b> <a href="_log_8h_source.html#l00032">Log.h:32</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

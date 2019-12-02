@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OwlEngine: Fichero Fuente OwlEngine/src/Owl/Shader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OwlEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_709356536221903f0474d929e8001d90.html">OwlEngine</a></li><li class="navelem"><a class="el" href="dir_0bc7c710d32d0734e81a94a069322c6c.html">src</a></li><li class="navelem"><a class="el" href="dir_be15a2aaabb45817d6cdd4d0965c044d.html">Owl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Shader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Core.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>OE {</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_o_e_1_1_shader.html">   10</a></span>&#160;    <span class="keyword">class </span>OWL_API <a class="code" href="class_o_e_1_1_shader.html">Shader</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        GLuint idProgram;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">bool</span> _allOk;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_o_e_1_1_shader.html">Shader</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        ~<a class="code" href="class_o_e_1_1_shader.html">Shader</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> init(<span class="keyword">const</span> GLchar* filename);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_o_e_1_1_shader.html#a8ca4e8b8e3ee2aebac2d580e7400518a">   26</a></span>&#160;        GLuint <a class="code" href="class_o_e_1_1_shader.html#a8ca4e8b8e3ee2aebac2d580e7400518a">getProgramId</a>() { <span class="keywordflow">return</span> idProgram; };</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_o_e_1_1_shader.html#af44e5c8d0a4b1987c3c9d87ce9d8f64e">   30</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_e_1_1_shader.html#af44e5c8d0a4b1987c3c9d87ce9d8f64e">use</a>() { <span class="keywordflow">if</span> (_allOk) glUseProgram(idProgram); }</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_o_e_1_1_shader.html#aef62dce64a16031e66239670154e75b8">   34</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_e_1_1_shader.html#aef62dce64a16031e66239670154e75b8">deleteProgram</a>() { <span class="keywordflow">if</span> (_allOk) glDeleteProgram(idProgram); }</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_o_e_1_1_shader.html#a7d74a4a1424db8eff339de6f2db9a099">   38</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_o_e_1_1_shader.html#a7d74a4a1424db8eff339de6f2db9a099">stopShader</a>() { <span class="keywordflow">if</span> (_allOk) { glUseProgram(0); } }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div><div class="ttc" id="class_o_e_1_1_shader_html_a8ca4e8b8e3ee2aebac2d580e7400518a"><div class="ttname"><a href="class_o_e_1_1_shader.html#a8ca4e8b8e3ee2aebac2d580e7400518a">OE::Shader::getProgramId</a></div><div class="ttdeci">GLuint getProgramId()</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00026">Shader.h:26</a></div></div>
+<div class="ttc" id="class_o_e_1_1_shader_html_af44e5c8d0a4b1987c3c9d87ce9d8f64e"><div class="ttname"><a href="class_o_e_1_1_shader.html#af44e5c8d0a4b1987c3c9d87ce9d8f64e">OE::Shader::use</a></div><div class="ttdeci">void use()</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00030">Shader.h:30</a></div></div>
+<div class="ttc" id="class_o_e_1_1_shader_html"><div class="ttname"><a href="class_o_e_1_1_shader.html">OE::Shader</a></div><div class="ttdoc">Compila los shader en grafica.</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00010">Shader.h:10</a></div></div>
+<div class="ttc" id="class_o_e_1_1_shader_html_aef62dce64a16031e66239670154e75b8"><div class="ttname"><a href="class_o_e_1_1_shader.html#aef62dce64a16031e66239670154e75b8">OE::Shader::deleteProgram</a></div><div class="ttdeci">void deleteProgram()</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00034">Shader.h:34</a></div></div>
+<div class="ttc" id="class_o_e_1_1_shader_html_a7d74a4a1424db8eff339de6f2db9a099"><div class="ttname"><a href="class_o_e_1_1_shader.html#a7d74a4a1424db8eff339de6f2db9a099">OE::Shader::stopShader</a></div><div class="ttdeci">void stopShader()</div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00038">Shader.h:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

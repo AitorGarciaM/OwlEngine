@@ -26,6 +26,8 @@
     <ClInclude Include="src\Owl\Mesh.h" />
     <ClInclude Include="src\Owl\Transform.h" />
     <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Owl\Texture.h" />
+    <ClInclude Include="src\Owl\TextureManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Owl\Application.cpp">
@@ -41,5 +43,7 @@
     <ClCompile Include="src\Owl\Mesh.cpp" />
     <ClCompile Include="src\Owl\Transform.cpp" />
     <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Owl\Texture.cpp" />
+    <ClCompile Include="src\Owl\TextureManager.cpp" />
   </ItemGroup>
 </Project>

@@ -71,7 +71,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)$(ProjectName)\src;$(SolutionDir)$(ProjectName)\vendor\glew\include;$(SolutionDir)$(ProjectName)\vendor\glm;$(SolutionDir)$(ProjectName)\vendor\SDL2\include;$(SolutionDir)$(ProjectName)\vendor\spdlog\include</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeaderFile>oepch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -79,7 +79,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>..\bin\Debug32-windows-x86\OwlEngine\OwlEngine.lib</ImportLibrary>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;glew32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)OwlEngine\vendor\glew\lib\Win32;$(SolutionDir)OwlEngine\vendor\SDL2\lib\x86</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -102,7 +102,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>..\bin\Releas32-windows-x86\OwlEngine\OwlEngine.lib</ImportLibrary>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;glew32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\glew\lib\Win32;C:\Users\jgait\Documents\DEV\Visual C++\OwlEngine\OwlEngine\vendor\SDL2\lib\x86</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -138,6 +138,8 @@
     <ClInclude Include="src\Owl\Core.h" />
     <ClInclude Include="src\Owl\EntryPoint.h" />
     <ClInclude Include="src\Owl\Log.h" />
+    <ClInclude Include="src\Owl\Texture.h" />
+    <ClInclude Include="src\Owl\TextureManager.h" />
     <ClInclude Include="src\Owl\Transform.h" />
     <ClInclude Include="src\Owl\Video.h" />
   </ItemGroup>
@@ -155,6 +157,8 @@
     <ClCompile Include="src\Owl\Log.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Owl\Texture.cpp" />
+    <ClCompile Include="src\Owl\TextureManager.cpp" />
     <ClCompile Include="src\Owl\Video.cpp" />
     <ClCompile Include="src\Owl\Transform.cpp" />
   </ItemGroup>

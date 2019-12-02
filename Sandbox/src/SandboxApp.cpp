@@ -2,8 +2,10 @@
 #include <Owl.h>
 #include "Camera.h"
 
-
-
+/**
+*@class Sandbox
+* @brief Applicacion de prueba para probar las funcionalidades del motor.
+*/
 class Sandbox : public OE::Application
 {
 private:
@@ -11,20 +13,24 @@ private:
 	OE::Mesh* mesh;
 	OE::Shader* shader;
 	Camera* mainCamera;
-
 	OE::Transform obj;
 
 public:
 	Sandbox() 
 	{
+		
+
 		OE::Log::init();
+
+		OE_CORE_INFO("El motor se esta iniciando!");
+
 		s_Video->init();
 
 		mesh = new OE::Mesh();
 		mesh->createQuad();
 
 		shader = new OE::Shader();
-		shader->init("Shader");
+		shader->init("Shader");		
 
 		mainCamera = new Camera();
 		mainCamera->init(Ortho);
@@ -40,8 +46,12 @@ public:
 		delete mesh;
 		delete mainCamera;
 		delete shader;
+		
 	}
 
+	/**
+	* Ciclo de vida de la aplicación.
+	*/
 	void run()
 	{		
 		while (!s_Input->getExit())

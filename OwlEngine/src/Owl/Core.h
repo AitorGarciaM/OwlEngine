@@ -17,3 +17,4 @@
 const glm::vec3 up = { 0.0f,1.0f,0.0f };
 
 #define vector3UP up
+
